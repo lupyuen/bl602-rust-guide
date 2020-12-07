@@ -62,9 +62,7 @@ Note: For Sipeed JTAG Debugger, FTDI channel must be 0 in [`openocd.cfg`](openoc
 ftdi_channel 0
 ```
 
-TODO: Flash Rust app to PineCone
-
-## Install and run OpenOCD for macOS (Doesn't Work)
+## Install and run OpenOCD for macOS
 
 Install driver for Sipeed JTAG Debugger...
 
@@ -95,16 +93,43 @@ xpack-openocd-0.10.0-14/bin/openocd
 We should see...
 
 ```
+
 xPack OpenOCD, x86_64 Open On-Chip Debugger 0.10.0+dev-00378-ge5be992df (2020-06-26-12:31)
 Licensed under GNU GPL v2
 For bug reports, read
-	http://openocd.org/doc/doxygen/bugs.html
+        http://openocd.org/doc/doxygen/bugs.html
 Ready for Remote Connections
-Info : clock speed 2000 kHz
-Warn : Haven't made progress in mpsse_flush() for 2039ms.
-Warn : Haven't made progress in mpsse_flush() for 4078ms.
-Warn : Haven't made progress in mpsse_flush() for 8157ms.
+Info : clock speed 100 kHz
+Info : JTAG tap: riscv.cpu tap/device found: 0x20000c05 (mfg: 0x602 (<unknown>), part: 0x0000, ver: 0x2)
+Info : datacount=1 progbufsize=2
+Info : Disabling abstract command reads from CSRs.
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x40801125
+Info : starting gdb server for riscv.cpu.0 on 3333
+Info : Listening on port 3333 for gdb connections
+Info : JTAG tap: riscv.cpu tap/device found: 0x20000c05 (mfg: 0x602 (<unknown>), part: 0x0000, ver: 0x2)
+reset-assert-pre
+reset-deassert-post
+Info : Disabling abstract command writes to CSRs.
+reset-init
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
 ```
+
+If the Sipeed JTAG Debugger is not detected, we will see in OpenOCD...
+
+```
+Error: no device found
+Error: unable to open ftdi device with vid 0403, pid 6010, description '*', serial '*' at bus location '*'
+```
+
+Note: For Sipeed JTAG Debugger, FTDI channel must be 0 in [`openocd.cfg`](openocd.cfg)...
+
+```
+ftdi_channel 0
+```
+
+## TODO: Flash Rust app to PineCone
 
 Open another Command Prompt and enter...
 
@@ -115,23 +140,6 @@ cargo run
 
 # Alternatively...
 # cargo run --example bl602-gpio-blinky
-```
-
-This shows a GDB error. Perhaps because the JTAG Pins are connected to the LED?
-
-```
-    Finished dev [unoptimized + debuginfo] target(s) in 0.05s
-     Running `riscv64-unknown-elf-gdb -q -x openocd.gdb target/riscv32imac-unknown-none-elf/debug/bl602-rust-guide`
-Reading symbols from target/riscv32imac-unknown-none-elf/debug/bl602-rust-guide...
-openocd.gdb:1: Error in sourced command file:
-:3333: Operation timed out.
-```
-
-If the Sipeed JTAG Debugger is not detected, we will see in OpenOCD...
-
-```
-Error: no device found
-Error: unable to open ftdi device with vid 0403, pid 6010, description '*', serial '*' at bus location '*'
 ```
 
 ## Try it out!
