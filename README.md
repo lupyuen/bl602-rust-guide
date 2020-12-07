@@ -1,6 +1,6 @@
 ﻿# BL602 Rust Guide for PineCone
 
-Refer to the article...
+The JTAG Port needs to be remapped to other GPIO Pins. Refer to the article...
 
 ["Quick Peek of PineCone BL602 RISC-V Evaluation Board"](https://lupyuen.github.io/articles/pinecone)
 
