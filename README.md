@@ -6,6 +6,10 @@ Refer to the article...
 
 ## Install and run OpenOCD for macOS
 
+Install driver for Sipeed JTAG Debugger...
+
+https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#id2
+
 Connect Sipeed JTAG Debugger to PineCone. Enter...
 
 ```bash
@@ -71,6 +75,10 @@ Error: unable to open ftdi device with vid 0403, pid 6010, description '*', seri
 ```
 
 ## Install and run OpenOCD for Windows
+
+Install driver for Sipeed JTAG Debugger...
+
+https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#id2
 
 Download OpenOCD from...
 
