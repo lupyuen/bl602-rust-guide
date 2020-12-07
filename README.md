@@ -8,6 +8,8 @@ The JTAG Port needs to be remapped to other GPIO Pins. Refer to the article...
 
 ## Install and run OpenOCD for Windows
 
+Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
+
 Install driver for Sipeed JTAG Debugger...
 
 https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#drivers
@@ -64,11 +66,13 @@ ftdi_channel 0
 
 ## Install and run OpenOCD for macOS
 
+Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
+
 Install driver for Sipeed JTAG Debugger...
 
 https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#drivers
 
-Connect Sipeed JTAG Debugger to PineCone. Enter...
+Enter...
 
 ```bash
 git clone --recursive https://github.com/sipeed/bl602-pac
@@ -122,6 +126,18 @@ If the Sipeed JTAG Debugger is not detected, we will see in OpenOCD...
 Error: no device found
 Error: unable to open ftdi device with vid 0403, pid 6010, description '*', serial '*' at bus location '*'
 ```
+
+If we see in OpenOCD...
+
+```
+Error: failed read at 0x11, status=1
+Error: Hart 0 is unavailable.
+Error: Hart 0 doesn't exist.
+Info : Hart 0 unexpectedly reset!
+Error: failed read at 0x11, status=1
+```
+
+...Check that the GND pin is connected from the Sipeed JTAG Debugger to PineCone.
 
 Note: For Sipeed JTAG Debugger, FTDI channel must be 0 in [`openocd.cfg`](openocd.cfg)...
 
