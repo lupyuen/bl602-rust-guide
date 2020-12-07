@@ -1,4 +1,4 @@
-﻿# BL602 Rust Guide for PineCone
+﻿# PineCone BL602 OpenOCD and Rust Guide
 
 The JTAG Port needs to be remapped to other GPIO Pins. Refer to the article...
 
@@ -9,6 +9,8 @@ The JTAG Port needs to be remapped to other GPIO Pins. Refer to the article...
 ## Install and run OpenOCD for Windows
 
 Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
+
+Connect PineCone and Sipeed JTAG Debugger to our computer (Yes we need two USB ports)
 
 Install driver for Sipeed JTAG Debugger...
 
@@ -67,6 +69,8 @@ ftdi_channel 0
 ## Install and run OpenOCD for macOS
 
 Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
+
+Connect PineCone and Sipeed JTAG Debugger to our computer (Yes we need two USB ports)
 
 Install driver for Sipeed JTAG Debugger...
 
