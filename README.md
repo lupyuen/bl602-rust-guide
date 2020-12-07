@@ -62,7 +62,7 @@ ftdi_channel 0
 
 TODO: Flash Rust app to PineCone
 
-## Install and run OpenOCD for macOS
+## Install and run OpenOCD for macOS (Doesn't Work)
 
 Install driver for Sipeed JTAG Debugger...
 
