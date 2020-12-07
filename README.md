@@ -8,7 +8,7 @@ Refer to the article...
 
 Install driver for Sipeed JTAG Debugger...
 
-https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#id2
+https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#drivers
 
 Connect Sipeed JTAG Debugger to PineCone. Enter...
 
@@ -78,7 +78,7 @@ Error: unable to open ftdi device with vid 0403, pid 6010, description '*', seri
 
 Install driver for Sipeed JTAG Debugger...
 
-https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#id2
+https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#drivers
 
 Download OpenOCD from...
 
