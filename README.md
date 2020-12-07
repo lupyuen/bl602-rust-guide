@@ -4,6 +4,8 @@ The JTAG Port needs to be remapped to other GPIO Pins. Refer to the article...
 
 ["Quick Peek of PineCone BL602 RISC-V Evaluation Board"](https://lupyuen.github.io/articles/pinecone)
 
+[How to remap the JTAG port](https://github.com/lupyuen/bl_iot_sdk/releases/tag/v0.0.4)
+
 ## Install and run OpenOCD for Windows
 
 Install driver for Sipeed JTAG Debugger...
