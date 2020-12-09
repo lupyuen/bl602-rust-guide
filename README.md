@@ -27,8 +27,8 @@ Run OpenOCD...
 ```cmd
 git clone --recursive https://github.com/sipeed/bl602-pac
 git clone --recursive https://github.com/sipeed/bl602-hal
-git clone --recursive https://github.com/lupyuen/bl602-rust-guide
-cd bl602-rust-guide
+git clone --recursive https://github.com/lupyuen/pinecone-rust
+cd pinecone-rust
 # TODO: Check openocd.cfg, verify that the FTDI channel is 0: "ftdi_channel 0"
 # TODO: Unzip OpenOCD into bl602-rust-guide\xpack-openocd-0.10.0-15
 xpack-openocd-0.10.0-15\bin\openocd.exe
@@ -81,8 +81,8 @@ Enter...
 ```bash
 git clone --recursive https://github.com/sipeed/bl602-pac
 git clone --recursive https://github.com/sipeed/bl602-hal
-git clone --recursive https://github.com/lupyuen/bl602-rust-guide
-cd bl602-rust-guide
+git clone --recursive https://github.com/lupyuen/pinecone-rust
+cd pinecone-rust
 rustup target add riscv32imac-unknown-none-elf
 cargo build
 
@@ -154,7 +154,7 @@ ftdi_channel 0
 Open another Command Prompt and enter...
 
 ```bash
-cd bl602-rust-guide
+cd pinecone-rust
 export PATH="$PWD/xpack-riscv-none-embed-gcc-8.3.0-2.3/bin:$PATH"
 cargo run
 
@@ -162,19 +162,6 @@ cargo run
 # cargo run --example bl602-gpio-blinky
 ```
 
-## Try it out!
-
-Open one terminal and execute:
-
-```
-openocd
-```
-
-Open another and execute:
-
-```
-cargo run --example bl602-gpio-blinky
-```
 ## License
 
 This project is licensed under either of Mulan PSL v2 or MIT.
