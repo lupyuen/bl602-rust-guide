@@ -1,10 +1,8 @@
 ﻿# PineCone BL602 OpenOCD and Rust Guide
 
-The JTAG Port needs to be remapped to other GPIO Pins. Refer to the article...
+Read the article...
 
-["Quick Peek of PineCone BL602 RISC-V Evaluation Board"](https://lupyuen.github.io/articles/pinecone)
-
-[How to remap the JTAG port](https://github.com/lupyuen/bl_iot_sdk/releases/tag/v0.0.4)
+["Connect PineCone BL602 to OpenOCD"](https://lupyuen.github.io/articles/openocd)
 
 ## Install and run OpenOCD for Windows
 
