@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `rbb_bw_ctrl_hw` reader"],["RBB_BT_MODE_BLE_R","Field `rbb_bt_mode_ble` reader - "],["RBB_BT_MODE_BLE_W","Field `rbb_bt_mode_ble` writer - "],["RBB_BW_CTRL_HW_SPEC","rbb_bw_ctrl_hw."],["W","Register `rbb_bw_ctrl_hw` writer"]]});

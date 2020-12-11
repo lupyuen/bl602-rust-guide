@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `spi_fifo_rdata` reader"],["SPI_FIFO_RDATA_R","Field `spi_fifo_rdata` reader - "],["SPI_FIFO_RDATA_SPEC","spi_fifo_rdata."],["SPI_FIFO_RDATA_W","Field `spi_fifo_rdata` writer - "],["W","Register `spi_fifo_rdata` writer"]]});

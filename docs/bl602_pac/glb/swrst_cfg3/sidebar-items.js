@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `swrst_cfg3` reader"],["SWRST_CFG3_SPEC","swrst_cfg3."]]});

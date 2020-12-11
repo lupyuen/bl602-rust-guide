@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `reg_key_slot_9_w2` reader"],["REG_KEY_SLOT_9_W2_R","Field `reg_key_slot_9_w2` reader - "],["REG_KEY_SLOT_9_W2_SPEC","reg_key_slot_9_w2."],["REG_KEY_SLOT_9_W2_W","Field `reg_key_slot_9_w2` writer - "],["W","Register `reg_key_slot_9_w2` writer"]]});

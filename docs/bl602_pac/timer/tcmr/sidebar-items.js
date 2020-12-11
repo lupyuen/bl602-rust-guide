@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `TCMR` reader"],["TCMR_SPEC","TCMR."],["TIMER2_MODE_R","Field `timer2_mode` reader - "],["TIMER2_MODE_W","Field `timer2_mode` writer - "],["TIMER3_MODE_R","Field `timer3_mode` reader - "],["TIMER3_MODE_W","Field `timer3_mode` writer - "],["W","Register `TCMR` writer"]]});

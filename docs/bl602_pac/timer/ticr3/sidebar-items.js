@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `TICR3` reader"],["TCLR_0_R","Field `tclr_0` reader - "],["TCLR_0_W","Field `tclr_0` writer - "],["TCLR_1_R","Field `tclr_1` reader - "],["TCLR_1_W","Field `tclr_1` writer - "],["TCLR_2_R","Field `tclr_2` reader - "],["TCLR_2_W","Field `tclr_2` writer - "],["TICR3_SPEC","TICR3."],["W","Register `TICR3` writer"]]});

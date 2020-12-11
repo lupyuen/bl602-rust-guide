@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["I2C_FIFO_RDATA_R","Field `i2c_fifo_rdata` reader - "],["I2C_FIFO_RDATA_SPEC","i2c_fifo_rdata."],["I2C_FIFO_RDATA_W","Field `i2c_fifo_rdata` writer - "],["R","Register `i2c_fifo_rdata` reader"],["W","Register `i2c_fifo_rdata` writer"]]});

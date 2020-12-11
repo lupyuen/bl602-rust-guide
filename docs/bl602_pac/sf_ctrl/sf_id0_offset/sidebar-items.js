@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `sf_id0_offset` reader"],["SF_ID0_OFFSET_R","Field `sf_id0_offset` reader - "],["SF_ID0_OFFSET_SPEC","sf_id0_offset."],["SF_ID0_OFFSET_W","Field `sf_id0_offset` writer - "],["W","Register `sf_id0_offset` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["EF_IF_ANA_TRIM_0_R","Field `ef_if_ana_trim_0` reader - "],["EF_IF_ANA_TRIM_0_SPEC","ef_if_ana_trim_0."],["EF_IF_ANA_TRIM_0_W","Field `ef_if_ana_trim_0` writer - "],["R","Register `ef_if_ana_trim_0` reader"],["W","Register `ef_if_ana_trim_0` writer"]]});

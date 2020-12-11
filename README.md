@@ -4,6 +4,10 @@ Read the article...
 
 ["Connect PineCone BL602 to OpenOCD"](https://lupyuen.github.io/articles/openocd)
 
+Based on...
+
+[Sipeed BL602 Rust Guide](https://github.com/sipeed/bl602-rust-guide)
+
 ## Install and run OpenOCD for Windows
 
 Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["PWM2_CLKDIV_SPEC","pwm2_clkdiv."],["PWM_CLK_DIV_R","Field `pwm_clk_div` reader - "],["PWM_CLK_DIV_W","Field `pwm_clk_div` writer - "],["R","Register `pwm2_clkdiv` reader"],["W","Register `pwm2_clkdiv` writer"]]});

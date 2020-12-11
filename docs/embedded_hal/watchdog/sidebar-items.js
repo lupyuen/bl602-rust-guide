@@ -1,0 +1,1 @@
+initSidebarItems({"trait":[["Disable","Disables a running watchdog timer so the processor won't be reset."],["Enable","Enables A watchdog timer to reset the processor if software is frozen or stalled."],["Watchdog","Feeds an existing watchdog to ensure the processor isn't reset. Sometimes the \"feeding\" operation is also referred to as \"refreshing\"."]]});

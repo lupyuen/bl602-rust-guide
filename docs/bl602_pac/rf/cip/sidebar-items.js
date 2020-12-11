@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CIP_SPEC","RX normal bias mode registers"],["R","Register `cip` reader"],["VG11_SEL_R","Field `vg11_sel` reader - "],["VG11_SEL_W","Field `vg11_sel` writer - "],["VG13_SEL_R","Field `vg13_sel` reader - "],["VG13_SEL_W","Field `vg13_sel` writer - "],["W","Register `cip` writer"]]});

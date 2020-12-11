@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DMA_C1LLI_SPEC","DMA_C1LLI."],["LLI_R","Field `LLI` reader - "],["LLI_W","Field `LLI` writer - "],["R","Register `DMA_C1LLI` reader"],["W","Register `DMA_C1LLI` writer"]]});

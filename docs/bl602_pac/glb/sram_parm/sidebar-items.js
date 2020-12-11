@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `sram_parm` reader"],["REG_SRAM_PARM_R","Field `reg_sram_parm` reader - "],["REG_SRAM_PARM_W","Field `reg_sram_parm` writer - "],["SRAM_PARM_SPEC","sram_parm."],["W","Register `sram_parm` writer"]]});

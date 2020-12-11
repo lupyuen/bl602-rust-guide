@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CGEN_CFG1_SPEC","cgen_cfg1."],["CGEN_S1A_R","Field `cgen_s1a` reader - "],["CGEN_S1A_W","Field `cgen_s1a` writer - "],["CGEN_S1_R","Field `cgen_s1` reader - "],["CGEN_S1_W","Field `cgen_s1` writer - "],["R","Register `cgen_cfg1` reader"],["W","Register `cgen_cfg1` writer"]]});

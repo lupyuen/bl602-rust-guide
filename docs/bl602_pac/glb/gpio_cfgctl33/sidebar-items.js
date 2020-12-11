@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GPIO_CFGCTL33_SPEC","GPIO_CFGCTL33."],["R","Register `GPIO_CFGCTL33` reader"]]});

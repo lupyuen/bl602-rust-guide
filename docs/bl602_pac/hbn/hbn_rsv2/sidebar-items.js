@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HBN_RSV2_R","Field `HBN_RSV2` reader - "],["HBN_RSV2_SPEC","HBN_RSV2."],["HBN_RSV2_W","Field `HBN_RSV2` writer - "],["R","Register `HBN_RSV2` reader"],["W","Register `HBN_RSV2` writer"]]});

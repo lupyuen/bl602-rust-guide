@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_SPI_STO_VALUE_R","Field `cr_spi_sto_value` reader - "],["CR_SPI_STO_VALUE_W","Field `cr_spi_sto_value` writer - "],["R","Register `spi_sto_value` reader"],["SPI_STO_VALUE_SPEC","spi_sto_value."],["W","Register `spi_sto_value` writer"]]});

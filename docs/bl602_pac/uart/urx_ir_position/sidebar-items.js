@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_URX_IR_POS_S_R","Field `cr_urx_ir_pos_s` reader - "],["CR_URX_IR_POS_S_W","Field `cr_urx_ir_pos_s` writer - "],["R","Register `urx_ir_position` reader"],["URX_IR_POSITION_SPEC","urx_ir_position."],["W","Register `urx_ir_position` writer"]]});

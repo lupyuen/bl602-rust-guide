@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GPDAC_DMA_WDATA_R","Field `gpdac_dma_wdata` reader - "],["GPDAC_DMA_WDATA_SPEC","gpdac_dma_wdata."],["GPDAC_DMA_WDATA_W","Field `gpdac_dma_wdata` writer - "],["R","Register `gpdac_dma_wdata` reader"],["W","Register `gpdac_dma_wdata` writer"]]});

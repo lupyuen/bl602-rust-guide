@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_IRTX_SWM_PW_5_R","Field `cr_irtx_swm_pw_5` reader - "],["CR_IRTX_SWM_PW_5_W","Field `cr_irtx_swm_pw_5` writer - "],["IRTX_SWM_PW_5_SPEC","irtx_swm_pw_5."],["R","Register `irtx_swm_pw_5` reader"],["W","Register `irtx_swm_pw_5` writer"]]});

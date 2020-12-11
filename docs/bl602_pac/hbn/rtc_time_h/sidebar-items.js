@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `RTC_TIME_H` reader"],["RTC_TIME_H_SPEC","RTC_TIME_H."],["RTC_TIME_LATCH_H_R","Field `rtc_time_latch_h` reader - "],["RTC_TIME_LATCH_H_W","Field `rtc_time_latch_h` writer - "],["RTC_TIME_LATCH_R","Field `rtc_time_latch` reader - "],["RTC_TIME_LATCH_W","Field `rtc_time_latch` writer - "],["W","Register `RTC_TIME_H` writer"]]});

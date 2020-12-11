@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DBG_SEL_HH_SPEC","DBG_SEL_HH."],["R","Register `DBG_SEL_HH` reader"],["REG_DBG_HH_CTRL_R","Field `reg_dbg_hh_ctrl` reader - "],["REG_DBG_HH_CTRL_W","Field `reg_dbg_hh_ctrl` writer - "],["W","Register `DBG_SEL_HH` writer"]]});

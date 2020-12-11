@@ -1,0 +1,3 @@
+(function() {var implementors = {};
+implementors["bl602_hal"] = [{"text":"impl&lt;PINS&gt; <a class=\"trait\" href=\"bl602_hal/prelude/trait._embedded_hal_serial_Write.html\" title=\"trait bl602_hal::prelude::_embedded_hal_serial_Write\">Write</a>&lt;u8&gt; for <a class=\"struct\" href=\"bl602_hal/serial/struct.Serial.html\" title=\"struct bl602_hal::serial::Serial\">Serial</a>&lt;<a class=\"struct\" href=\"bl602_pac/struct.UART.html\" title=\"struct bl602_pac::UART\">UART</a>, PINS&gt;","synthetic":false,"types":["bl602_hal::serial::Serial"]}];
+if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

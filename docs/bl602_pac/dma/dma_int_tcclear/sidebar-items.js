@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DMA_INTTCCLEAR_SPEC","DMA_IntTCClear."],["INTTCCLEAR_R","Field `IntTCClear` reader - "],["INTTCCLEAR_W","Field `IntTCClear` writer - "],["R","Register `DMA_IntTCClear` reader"],["W","Register `DMA_IntTCClear` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `TCVWR3` reader"],["TCVWR3_SPEC","TCVWR3."],["TCVWR_R","Field `tcvwr` reader - "],["TCVWR_W","Field `tcvwr` writer - "],["W","Register `TCVWR3` writer"]]});

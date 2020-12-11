@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `sf_aes_key_r2_4` reader"],["SF_AES_KEY_R2_4_R","Field `sf_aes_key_r2_4` reader - "],["SF_AES_KEY_R2_4_SPEC","sf_aes_key_r2_4."],["SF_AES_KEY_R2_4_W","Field `sf_aes_key_r2_4` writer - "],["W","Register `sf_aes_key_r2_4` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["APB_CCI_RDATA_R","Field `apb_cci_rdata` reader - "],["APB_CCI_RDATA_W","Field `apb_cci_rdata` writer - "],["CCI_RDATA_SPEC","cci_rdata."],["R","Register `cci_rdata` reader"],["W","Register `cci_rdata` writer"]]});

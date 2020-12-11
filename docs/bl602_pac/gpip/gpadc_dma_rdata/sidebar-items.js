@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GPADC_DMA_RDATA_R","Field `gpadc_dma_rdata` reader - "],["GPADC_DMA_RDATA_SPEC","gpadc_dma_rdata."],["GPADC_DMA_RDATA_W","Field `gpadc_dma_rdata` writer - "],["R","Register `gpadc_dma_rdata` reader"],["RSVD_31_26_R","Field `rsvd_31_26` reader - "],["RSVD_31_26_W","Field `rsvd_31_26` writer - "],["W","Register `gpadc_dma_rdata` writer"]]});

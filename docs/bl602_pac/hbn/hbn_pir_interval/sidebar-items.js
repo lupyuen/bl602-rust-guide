@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HBN_PIR_INTERVAL_SPEC","HBN_PIR_INTERVAL."],["PIR_INTERVAL_R","Field `pir_interval` reader - "],["PIR_INTERVAL_W","Field `pir_interval` writer - "],["R","Register `HBN_PIR_INTERVAL` reader"],["W","Register `HBN_PIR_INTERVAL` writer"]]});

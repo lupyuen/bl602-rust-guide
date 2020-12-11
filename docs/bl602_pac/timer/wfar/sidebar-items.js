@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `WFAR` reader"],["W","Register `WFAR` writer"],["WFAR_R","Field `wfar` reader - "],["WFAR_SPEC","WFAR."],["WFAR_W","Field `wfar` writer - "]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DMA_RAWINTTCSTATUS_SPEC","DMA_RawIntTCStatus."],["R","Register `DMA_RawIntTCStatus` reader"],["RAWINTTCSTATUS_R","Field `RawIntTCStatus` reader - "],["RAWINTTCSTATUS_W","Field `RawIntTCStatus` writer - "],["W","Register `DMA_RawIntTCStatus` writer"]]});

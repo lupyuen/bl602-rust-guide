@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HBN_PIR_VTH_SPEC","HBN_PIR_VTH."],["PIR_VTH_R","Field `pir_vth` reader - "],["PIR_VTH_W","Field `pir_vth` writer - "],["R","Register `HBN_PIR_VTH` reader"],["W","Register `HBN_PIR_VTH` writer"]]});

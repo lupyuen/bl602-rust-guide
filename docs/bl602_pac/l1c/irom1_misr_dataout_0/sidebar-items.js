@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["IROM1_MISR_DATAOUT_0_R","Field `irom1_misr_dataout_0` reader - "],["IROM1_MISR_DATAOUT_0_SPEC","irom1_misr_dataout_0."],["IROM1_MISR_DATAOUT_0_W","Field `irom1_misr_dataout_0` writer - "],["R","Register `irom1_misr_dataout_0` reader"],["W","Register `irom1_misr_dataout_0` writer"]]});

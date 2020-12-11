@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DL_RFCAL_TABLE_STATUS_R","Field `dl_rfcal_table_status` reader - "],["DL_RFCAL_TABLE_STATUS_W","Field `dl_rfcal_table_status` writer - "],["R","Register `rfcal_status2` reader"],["RFCAL_STATUS2_SPEC","rfcal_status2."],["W","Register `rfcal_status2` writer"]]});

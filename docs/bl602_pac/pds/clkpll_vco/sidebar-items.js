@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CLKPLL_SHRTR_R","Field `clkpll_shrtr` reader - "],["CLKPLL_SHRTR_W","Field `clkpll_shrtr` writer - "],["CLKPLL_VCO_SPEC","clkpll_vco."],["CLKPLL_VCO_SPEED_R","Field `clkpll_vco_speed` reader - "],["CLKPLL_VCO_SPEED_W","Field `clkpll_vco_speed` writer - "],["R","Register `clkpll_vco` reader"],["W","Register `clkpll_vco` writer"]]});

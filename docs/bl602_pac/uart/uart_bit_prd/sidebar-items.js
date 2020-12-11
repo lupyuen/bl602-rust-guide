@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_URX_BIT_PRD_R","Field `cr_urx_bit_prd` reader - "],["CR_URX_BIT_PRD_W","Field `cr_urx_bit_prd` writer - "],["CR_UTX_BIT_PRD_R","Field `cr_utx_bit_prd` reader - "],["CR_UTX_BIT_PRD_W","Field `cr_utx_bit_prd` writer - "],["R","Register `uart_bit_prd` reader"],["UART_BIT_PRD_SPEC","uart_bit_prd."],["W","Register `uart_bit_prd` writer"]]});

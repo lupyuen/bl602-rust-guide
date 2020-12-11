@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["IRRX_DATA_COUNT_SPEC","irrx_data_count."],["R","Register `irrx_data_count` reader"],["STS_IRRX_DATA_CNT_R","Field `sts_irrx_data_cnt` reader - "],["STS_IRRX_DATA_CNT_W","Field `sts_irrx_data_cnt` writer - "],["W","Register `irrx_data_count` writer"]]});

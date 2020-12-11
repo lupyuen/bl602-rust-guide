@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `uart_fifo_wdata` reader"],["UART_FIFO_WDATA_R","Field `uart_fifo_wdata` reader - "],["UART_FIFO_WDATA_SPEC","uart_fifo_wdata."],["UART_FIFO_WDATA_W","Field `uart_fifo_wdata` writer - "],["W","Register `uart_fifo_wdata` writer"]]});

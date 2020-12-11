@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_NP_SRAM_PWR_R","Field `cr_np_sram_pwr` reader - "],["CR_NP_SRAM_PWR_W","Field `cr_np_sram_pwr` writer - "],["PDS_RAM1_SPEC","pds_ram1."],["R","Register `pds_ram1` reader"],["W","Register `pds_ram1` writer"]]});

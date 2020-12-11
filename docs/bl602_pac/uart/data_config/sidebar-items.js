@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_UART_BIT_INV_R","Field `cr_uart_bit_inv` reader - "],["CR_UART_BIT_INV_W","Field `cr_uart_bit_inv` writer - "],["DATA_CONFIG_SPEC","data_config."],["R","Register `data_config` reader"],["W","Register `data_config` writer"]]});

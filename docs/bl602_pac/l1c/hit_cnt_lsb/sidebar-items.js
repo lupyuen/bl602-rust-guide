@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HIT_CNT_LSB_R","Field `hit_cnt_lsb` reader - "],["HIT_CNT_LSB_SPEC","hit_cnt_lsb."],["HIT_CNT_LSB_W","Field `hit_cnt_lsb` writer - "],["R","Register `hit_cnt_lsb` reader"],["W","Register `hit_cnt_lsb` writer"]]});

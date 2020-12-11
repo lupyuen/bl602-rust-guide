@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["EF_CRC_CTRL_5_SPEC","ef_crc_ctrl_5."],["EF_CRC_DOUT_R","Field `ef_crc_dout` reader - "],["EF_CRC_DOUT_W","Field `ef_crc_dout` writer - "],["R","Register `ef_crc_ctrl_5` reader"],["W","Register `ef_crc_ctrl_5` writer"]]});

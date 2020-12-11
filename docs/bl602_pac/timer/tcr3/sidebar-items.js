@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `TCR3` reader"],["TCR3_COUNTER_R","Field `tcr3_counter` reader - "],["TCR3_COUNTER_W","Field `tcr3_counter` writer - "],["TCR3_SPEC","TCR3."],["W","Register `TCR3` writer"]]});

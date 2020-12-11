@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `sf_ahb2sif_status` reader"],["SF_AHB2SIF_STATUS_R","Field `sf_ahb2sif_status` reader - "],["SF_AHB2SIF_STATUS_SPEC","sf_ahb2sif_status."],["SF_AHB2SIF_STATUS_W","Field `sf_ahb2sif_status` writer - "],["W","Register `sf_ahb2sif_status` writer"]]});

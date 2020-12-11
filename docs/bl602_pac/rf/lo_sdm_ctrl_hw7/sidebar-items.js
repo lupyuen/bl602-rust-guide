@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["LO_SDMIN_1M_R","Field `lo_sdmin_1m` reader - "],["LO_SDMIN_1M_W","Field `lo_sdmin_1m` writer - "],["LO_SDM_CTRL_HW7_SPEC","lo_sdm_ctrl_hw7."],["R","Register `lo_sdm_ctrl_hw7` reader"],["W","Register `lo_sdm_ctrl_hw7` writer"]]});

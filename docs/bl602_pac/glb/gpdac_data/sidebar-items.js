@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GPDAC_A_DATA_R","Field `gpdac_a_data` reader - "],["GPDAC_A_DATA_W","Field `gpdac_a_data` writer - "],["GPDAC_B_DATA_R","Field `gpdac_b_data` reader - "],["GPDAC_B_DATA_W","Field `gpdac_b_data` writer - "],["GPDAC_DATA_SPEC","gpdac_data."],["R","Register `gpdac_data` reader"],["W","Register `gpdac_data` writer"]]});

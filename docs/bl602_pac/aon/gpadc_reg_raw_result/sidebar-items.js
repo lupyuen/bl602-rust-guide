@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["GPADC_RAW_DATA_R","Field `gpadc_raw_data` reader - "],["GPADC_RAW_DATA_W","Field `gpadc_raw_data` writer - "],["GPADC_REG_RAW_RESULT_SPEC","gpadc_reg_raw_result."],["R","Register `gpadc_reg_raw_result` reader"],["W","Register `gpadc_reg_raw_result` writer"]]});

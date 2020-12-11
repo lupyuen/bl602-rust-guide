@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CGEN_CFG3_SPEC","cgen_cfg3."],["R","Register `cgen_cfg3` reader"]]});

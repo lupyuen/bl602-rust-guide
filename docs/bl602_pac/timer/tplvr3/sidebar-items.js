@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `TPLVR3` reader"],["TPLVR3_SPEC","TPLVR3."],["TPLVR_R","Field `tplvr` reader - "],["TPLVR_W","Field `tplvr` writer - "],["W","Register `TPLVR3` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["EF_CRC_CTRL_1_SPEC","ef_crc_ctrl_1."],["EF_CRC_DATA_0_EN_R","Field `ef_crc_data_0_en` reader - "],["EF_CRC_DATA_0_EN_W","Field `ef_crc_data_0_en` writer - "],["R","Register `ef_crc_ctrl_1` reader"],["W","Register `ef_crc_ctrl_1` writer"]]});

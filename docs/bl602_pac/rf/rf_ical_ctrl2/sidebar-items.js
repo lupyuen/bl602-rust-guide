@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `rf_ical_ctrl2` reader"],["RF_ICAL_CTRL2_SPEC","rf_ical_ctrl2."],["RF_ICAL_PERIOD_N_R","Field `rf_ical_period_n` reader - "],["RF_ICAL_PERIOD_N_W","Field `rf_ical_period_n` writer - "],["W","Register `rf_ical_ctrl2` writer"]]});

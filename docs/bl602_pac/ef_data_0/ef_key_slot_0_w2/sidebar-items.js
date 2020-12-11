@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["EF_KEY_SLOT_0_W2_R","Field `ef_key_slot_0_w2` reader - "],["EF_KEY_SLOT_0_W2_SPEC","ef_key_slot_0_w2."],["EF_KEY_SLOT_0_W2_W","Field `ef_key_slot_0_w2` writer - "],["R","Register `ef_key_slot_0_w2` reader"],["W","Register `ef_key_slot_0_w2` writer"]]});

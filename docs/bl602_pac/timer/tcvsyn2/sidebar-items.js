@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `TCVSYN2` reader"],["TCVSYN2_R","Field `tcvsyn2` reader - "],["TCVSYN2_SPEC","TCVSYN2."],["TCVSYN2_W","Field `tcvsyn2` writer - "],["W","Register `TCVSYN2` writer"]]});

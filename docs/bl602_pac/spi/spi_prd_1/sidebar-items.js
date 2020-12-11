@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_SPI_PRD_I_R","Field `cr_spi_prd_i` reader - "],["CR_SPI_PRD_I_W","Field `cr_spi_prd_i` writer - "],["R","Register `spi_prd_1` reader"],["SPI_PRD_1_SPEC","spi_prd_1."],["W","Register `spi_prd_1` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `rf_sram_ctrl6` reader"],["RF_SRAM_CTRL6_SPEC","rf_sram_ctrl6."],["RF_SRAM_DAC_STS_R","Field `rf_sram_dac_sts` reader - "],["RF_SRAM_DAC_STS_W","Field `rf_sram_dac_sts` writer - "],["W","Register `rf_sram_ctrl6` writer"]]});

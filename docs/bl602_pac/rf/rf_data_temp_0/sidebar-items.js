@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `rf_data_temp_0` reader"],["RF_DATA_TEMP_0_R","Field `rf_data_temp_0` reader - "],["RF_DATA_TEMP_0_SPEC","rf_data_temp_0."],["RF_DATA_TEMP_0_W","Field `rf_data_temp_0` writer - "],["W","Register `rf_data_temp_0` writer"]]});

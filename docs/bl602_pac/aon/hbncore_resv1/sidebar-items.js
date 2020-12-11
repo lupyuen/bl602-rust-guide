@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HBNCORE_RESV1_DATA_R","Field `hbncore_resv1_data` reader - "],["HBNCORE_RESV1_DATA_W","Field `hbncore_resv1_data` writer - "],["HBNCORE_RESV1_SPEC","hbncore_resv1."],["R","Register `hbncore_resv1` reader"],["W","Register `hbncore_resv1` writer"]]});

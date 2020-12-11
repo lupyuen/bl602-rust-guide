@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["EF_WIFI_MAC_HIGH_R","Field `ef_wifi_mac_high` reader - "],["EF_WIFI_MAC_HIGH_SPEC","ef_wifi_mac_high."],["EF_WIFI_MAC_HIGH_W","Field `ef_wifi_mac_high` writer - "],["R","Register `ef_wifi_mac_high` reader"],["W","Register `ef_wifi_mac_high` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `sf_if_sahb_2` reader"],["SF_IF_0_CMD_BUF_1_R","Field `sf_if_0_cmd_buf_1` reader - "],["SF_IF_0_CMD_BUF_1_W","Field `sf_if_0_cmd_buf_1` writer - "],["SF_IF_SAHB_2_SPEC","sf_if_sahb_2."],["W","Register `sf_if_sahb_2` writer"]]});

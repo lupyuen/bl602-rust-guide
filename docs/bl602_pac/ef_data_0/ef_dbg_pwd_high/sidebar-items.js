@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["EF_DBG_PWD_HIGH_R","Field `ef_dbg_pwd_high` reader - "],["EF_DBG_PWD_HIGH_SPEC","ef_dbg_pwd_high."],["EF_DBG_PWD_HIGH_W","Field `ef_dbg_pwd_high` writer - "],["R","Register `ef_dbg_pwd_high` reader"],["W","Register `ef_dbg_pwd_high` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `spi_bus_busy` reader"],["SPI_BUS_BUSY_SPEC","spi_bus_busy."],["STS_SPI_BUS_BUSY_R","Field `sts_spi_bus_busy` reader - "],["STS_SPI_BUS_BUSY_W","Field `sts_spi_bus_busy` writer - "],["W","Register `spi_bus_busy` writer"]]});

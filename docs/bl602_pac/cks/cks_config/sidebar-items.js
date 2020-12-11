@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CKS_CONFIG_SPEC","cks_config."],["CR_CKS_BYTE_SWAP_R","Field `cr_cks_byte_swap` reader - "],["CR_CKS_BYTE_SWAP_W","Field `cr_cks_byte_swap` writer - "],["CR_CKS_CLR_R","Field `cr_cks_clr` reader - "],["CR_CKS_CLR_W","Field `cr_cks_clr` writer - "],["R","Register `cks_config` reader"],["W","Register `cks_config` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DMA_C0DSTADDR_SPEC","DMA_C0DstAddr."],["DSTADDR_R","Field `DstAddr` reader - "],["DSTADDR_W","Field `DstAddr` writer - "],["R","Register `DMA_C0DstAddr` reader"],["W","Register `DMA_C0DstAddr` writer"]]});

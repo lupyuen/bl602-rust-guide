@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="Source to the Rust file `/Users/Luppy/pinecone/bl602-pac/src/spi.rs`."><meta name="keywords" content="rust, rustlang, rust-lang"><title>spi.rs.html -- source</title><link rel="stylesheet" type="text/css" href="../../normalize.css"><link rel="stylesheet" type="text/css" href="../../rustdoc.css" id="mainThemeStyle"><link rel="stylesheet" type="text/css" href="../../light.css"  id="themeStyle"><link rel="stylesheet" type="text/css" href="../../dark.css" disabled ><link rel="stylesheet" type="text/css" href="../../ayu.css" disabled ><script src="../../storage.js"></script><noscript><link rel="stylesheet" href="../../noscript.css"></noscript><link rel="shortcut icon" href="../../favicon.ico"><style type="text/css">#crate-search{background-image:url("../../down-arrow.svg");}</style></head><body class="rustdoc source"><!--[if lte IE 8]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><nav class="sidebar"><div class="sidebar-menu">&#9776;</div><a href='../../bl602_pac/index.html'><div class='logo-container'><img src='../../rust-logo.png' alt='logo'></div></a></nav><div class="theme-picker"><button id="theme-picker" aria-label="Pick another theme!"><img src="../../brush.svg" width="18" alt="Pick another theme!"></button><div id="theme-choices"></div></div><script src="../../theme.js"></script><nav class="sub"><form class="search-form"><div class="search-container"><div><select id="crate-search"><option value="All crates">All crates</option></select><input class="search-input" name="search" disabled autocomplete="off" spellcheck="false" placeholder="Click or press ‘S’ to search, ‘?’ for more options…" type="search"></div><a id="settings-menu" href="../../settings.html"><img src="../../wheel.svg" width="18" alt="Change settings"></a></div></form></nav><section id="main" class="content"><pre class="line-numbers"><span id="1"> 1</span>
+<span id="2"> 2</span>
+<span id="3"> 3</span>
+<span id="4"> 4</span>
+<span id="5"> 5</span>
+<span id="6"> 6</span>
+<span id="7"> 7</span>
+<span id="8"> 8</span>
+<span id="9"> 9</span>
+<span id="10">10</span>
+<span id="11">11</span>
+<span id="12">12</span>
+<span id="13">13</span>
+<span id="14">14</span>
+<span id="15">15</span>
+<span id="16">16</span>
+<span id="17">17</span>
+<span id="18">18</span>
+<span id="19">19</span>
+<span id="20">20</span>
+<span id="21">21</span>
+<span id="22">22</span>
+<span id="23">23</span>
+<span id="24">24</span>
+<span id="25">25</span>
+<span id="26">26</span>
+<span id="27">27</span>
+<span id="28">28</span>
+<span id="29">29</span>
+<span id="30">30</span>
+<span id="31">31</span>
+<span id="32">32</span>
+<span id="33">33</span>
+<span id="34">34</span>
+<span id="35">35</span>
+<span id="36">36</span>
+<span id="37">37</span>
+<span id="38">38</span>
+<span id="39">39</span>
+<span id="40">40</span>
+<span id="41">41</span>
+<span id="42">42</span>
+<span id="43">43</span>
+<span id="44">44</span>
+<span id="45">45</span>
+<span id="46">46</span>
+<span id="47">47</span>
+<span id="48">48</span>
+<span id="49">49</span>
+<span id="50">50</span>
+<span id="51">51</span>
+<span id="52">52</span>
+<span id="53">53</span>
+<span id="54">54</span>
+<span id="55">55</span>
+<span id="56">56</span>
+<span id="57">57</span>
+<span id="58">58</span>
+<span id="59">59</span>
+<span id="60">60</span>
+<span id="61">61</span>
+<span id="62">62</span>
+<span id="63">63</span>
+<span id="64">64</span>
+<span id="65">65</span>
+<span id="66">66</span>
+<span id="67">67</span>
+<span id="68">68</span>
+<span id="69">69</span>
+<span id="70">70</span>
+<span id="71">71</span>
+<span id="72">72</span>
+</pre><div class="example-wrap"><pre class="rust ">
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">r&quot;Register block&quot;</span>]</span>
+<span class="attribute">#[<span class="ident">repr</span>(<span class="ident">C</span>)]</span>
+<span class="kw">pub</span> <span class="kw">struct</span> <span class="ident">RegisterBlock</span> {
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x00 - spi_config.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_config</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_config</span>::<span class="ident">SPI_CONFIG_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x04 - spi_int_sts.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_int_sts</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_int_sts</span>::<span class="ident">SPI_INT_STS_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x08 - spi_bus_busy.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_bus_busy</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_bus_busy</span>::<span class="ident">SPI_BUS_BUSY_SPEC</span><span class="op">&gt;</span>,
+    <span class="ident">_reserved3</span>: [<span class="ident">u8</span>; <span class="number">4usize</span>],
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x10 - spi_prd_0.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_prd_0</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_prd_0</span>::<span class="ident">SPI_PRD_0_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x14 - spi_prd_1.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_prd_1</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_prd_1</span>::<span class="ident">SPI_PRD_1_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x18 - spi_rxd_ignr.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_rxd_ignr</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_rxd_ignr</span>::<span class="ident">SPI_RXD_IGNR_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x1c - spi_sto_value.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_sto_value</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_sto_value</span>::<span class="ident">SPI_STO_VALUE_SPEC</span><span class="op">&gt;</span>,
+    <span class="ident">_reserved7</span>: [<span class="ident">u8</span>; <span class="number">96usize</span>],
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x80 - spi_fifo_config_0.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_fifo_config_0</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_config_0</span>::<span class="ident">SPI_FIFO_CONFIG_0_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x84 - spi_fifo_config_1.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_fifo_config_1</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_config_1</span>::<span class="ident">SPI_FIFO_CONFIG_1_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x88 - spi_fifo_wdata.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_fifo_wdata</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_wdata</span>::<span class="ident">SPI_FIFO_WDATA_SPEC</span><span class="op">&gt;</span>,
+    <span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;0x8c - spi_fifo_rdata.&quot;</span>]</span>
+    <span class="kw">pub</span> <span class="ident">spi_fifo_rdata</span>: <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_rdata</span>::<span class="ident">SPI_FIFO_RDATA_SPEC</span><span class="op">&gt;</span>,
+}
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_config register accessor: an alias for `Reg&lt;SPI_CONFIG_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_CONFIG</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_config</span>::<span class="ident">SPI_CONFIG_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_config.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_config</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_int_sts register accessor: an alias for `Reg&lt;SPI_INT_STS_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_INT_STS</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_int_sts</span>::<span class="ident">SPI_INT_STS_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_int_sts.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_int_sts</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_bus_busy register accessor: an alias for `Reg&lt;SPI_BUS_BUSY_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_BUS_BUSY</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_bus_busy</span>::<span class="ident">SPI_BUS_BUSY_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_bus_busy.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_bus_busy</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_prd_0 register accessor: an alias for `Reg&lt;SPI_PRD_0_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_PRD_0</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_prd_0</span>::<span class="ident">SPI_PRD_0_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_prd_0.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_prd_0</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_prd_1 register accessor: an alias for `Reg&lt;SPI_PRD_1_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_PRD_1</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_prd_1</span>::<span class="ident">SPI_PRD_1_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_prd_1.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_prd_1</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_rxd_ignr register accessor: an alias for `Reg&lt;SPI_RXD_IGNR_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_RXD_IGNR</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_rxd_ignr</span>::<span class="ident">SPI_RXD_IGNR_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_rxd_ignr.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_rxd_ignr</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_sto_value register accessor: an alias for `Reg&lt;SPI_STO_VALUE_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_STO_VALUE</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_sto_value</span>::<span class="ident">SPI_STO_VALUE_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_sto_value.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_sto_value</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_config_0 register accessor: an alias for `Reg&lt;SPI_FIFO_CONFIG_0_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_FIFO_CONFIG_0</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_config_0</span>::<span class="ident">SPI_FIFO_CONFIG_0_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_config_0.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_fifo_config_0</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_config_1 register accessor: an alias for `Reg&lt;SPI_FIFO_CONFIG_1_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_FIFO_CONFIG_1</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_config_1</span>::<span class="ident">SPI_FIFO_CONFIG_1_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_config_1.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_fifo_config_1</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_wdata register accessor: an alias for `Reg&lt;SPI_FIFO_WDATA_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_FIFO_WDATA</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_wdata</span>::<span class="ident">SPI_FIFO_WDATA_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_wdata.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_fifo_wdata</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_rdata register accessor: an alias for `Reg&lt;SPI_FIFO_RDATA_SPEC&gt;`&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">type</span> <span class="ident">SPI_FIFO_RDATA</span> <span class="op">=</span> <span class="kw">crate</span>::<span class="ident">Reg</span><span class="op">&lt;</span><span class="ident">spi_fifo_rdata</span>::<span class="ident">SPI_FIFO_RDATA_SPEC</span><span class="op">&gt;</span>;
+<span class="attribute">#[<span class="ident">doc</span> <span class="op">=</span> <span class="string">&quot;spi_fifo_rdata.&quot;</span>]</span>
+<span class="kw">pub</span> <span class="kw">mod</span> <span class="ident">spi_fifo_rdata</span>;
+</pre></div>
+</section><section id="search" class="content hidden"></section><section class="footer"></section><script>window.rootPath = "../../";window.currentCrate = "bl602_pac";</script><script src="../../main.js"></script><script src="../../source-script.js"></script><script src="../../source-files.js"></script><script defer src="../../search-index.js"></script></body></html>

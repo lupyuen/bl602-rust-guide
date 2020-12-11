@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HBN_TIME_L_R","Field `hbn_time_l` reader - "],["HBN_TIME_L_SPEC","HBN_TIME_L."],["HBN_TIME_L_W","Field `hbn_time_l` writer - "],["R","Register `HBN_TIME_L` reader"],["W","Register `HBN_TIME_L` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DEBUG_I_R","Field `debug_i` reader - "],["DEBUG_I_W","Field `debug_i` writer - "],["DEBUG_OE_R","Field `debug_oe` reader - "],["DEBUG_OE_W","Field `debug_oe` writer - "],["DEBUG_SPEC","debug."],["R","Register `debug` reader"],["W","Register `debug` writer"]]});

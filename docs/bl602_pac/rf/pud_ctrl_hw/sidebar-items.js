@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["PUD_CTRL_HW_SPEC","pud_ctrl_hw."],["PUD_VCO_HW_R","Field `pud_vco_hw` reader - "],["PUD_VCO_HW_W","Field `pud_vco_hw` writer - "],["R","Register `pud_ctrl_hw` reader"],["W","Register `pud_ctrl_hw` writer"]]});

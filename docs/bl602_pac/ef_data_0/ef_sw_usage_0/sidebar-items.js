@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["EF_SW_USAGE_0_R","Field `ef_sw_usage_0` reader - "],["EF_SW_USAGE_0_SPEC","ef_sw_usage_0."],["EF_SW_USAGE_0_W","Field `ef_sw_usage_0` writer - "],["R","Register `ef_sw_usage_0` reader"],["W","Register `ef_sw_usage_0` writer"]]});

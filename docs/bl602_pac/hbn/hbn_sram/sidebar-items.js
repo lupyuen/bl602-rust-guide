@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["HBN_SRAM_SPEC","HBN_SRAM."],["R","Register `HBN_SRAM` reader"],["RETRAM_RET_R","Field `retram_ret` reader - "],["RETRAM_RET_W","Field `retram_ret` writer - "],["RETRAM_SLP_R","Field `retram_slp` reader - "],["RETRAM_SLP_W","Field `retram_slp` writer - "],["W","Register `HBN_SRAM` writer"]]});

@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["PSW_IRRCV_SPEC","psw_irrcv."],["PU_IR_PSW_AON_R","Field `pu_ir_psw_aon` reader - "],["PU_IR_PSW_AON_W","Field `pu_ir_psw_aon` writer - "],["R","Register `psw_irrcv` reader"],["W","Register `psw_irrcv` writer"]]});

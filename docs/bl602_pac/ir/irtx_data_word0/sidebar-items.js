@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["CR_IRTX_DATA_WORD0_R","Field `cr_irtx_data_word0` reader - "],["CR_IRTX_DATA_WORD0_W","Field `cr_irtx_data_word0` writer - "],["IRTX_DATA_WORD0_SPEC","irtx_data_word0."],["R","Register `irtx_data_word0` reader"],["W","Register `irtx_data_word0` writer"]]});

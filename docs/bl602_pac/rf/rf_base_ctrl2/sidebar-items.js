@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `rf_base_ctrl2` reader"],["RF_BASE_CTRL2_SPEC","ZRF Control register 0"]]});

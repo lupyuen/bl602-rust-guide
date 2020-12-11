@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["DFE_ADC_RAW_I_R","Field `dfe_adc_raw_i` reader - "],["DFE_ADC_RAW_I_W","Field `dfe_adc_raw_i` writer - "],["DFE_ADC_RAW_Q_R","Field `dfe_adc_raw_q` reader - "],["DFE_ADC_RAW_Q_W","Field `dfe_adc_raw_q` writer - "],["DFE_CTRL_11_SPEC","dfe_ctrl_11."],["R","Register `dfe_ctrl_11` reader"],["W","Register `dfe_ctrl_11` writer"]]});

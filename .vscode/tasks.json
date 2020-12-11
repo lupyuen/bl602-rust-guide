@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            //  Generate documentation.
+            "label": "📖 Generate Doc",
+            "type": "shell",
+            "windows": {
+                "command": "cmd",
+                "args": [
+                    "/c",
+                    " cargo doc --document-private-items && echo ✅ ◾ ️Done! target/riscv32imac-unknown-none-elf/doc "
+                ]
+            },
+            "osx": {
+                "command": "bash",
+                "args": [
+                    "-c", "-l",
+                    " set -e -x ; cargo doc --document-private-items ; echo ✅ ◾ ️Done! target/riscv32imac-unknown-none-elf/doc "
+                ]
+            },
+            "linux": {
+                "command": "bash",
+                "args": [
+                    "-c", "-l",
+                    " set -e -x ; cargo doc --document-private-items ; echo ✅ ◾ ️Done! target/riscv32imac-unknown-none-elf/doc "
+                ]
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "clear": true
+            }
+        },
+    ]
+}

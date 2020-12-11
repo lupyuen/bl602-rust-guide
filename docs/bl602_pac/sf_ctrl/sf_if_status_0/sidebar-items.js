@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["R","Register `sf_if_status_0` reader"],["SF_IF_STATUS_0_R","Field `sf_if_status_0` reader - "],["SF_IF_STATUS_0_SPEC","sf_if_status_0."],["SF_IF_STATUS_0_W","Field `sf_if_status_0` writer - "],["W","Register `sf_if_status_0` writer"]]});

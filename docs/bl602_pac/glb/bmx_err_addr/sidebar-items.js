@@ -1,0 +1,1 @@
+initSidebarItems({"struct":[["BMX_ERR_ADDR_R","Field `bmx_err_addr` reader - "],["BMX_ERR_ADDR_SPEC","bmx_err_addr."],["BMX_ERR_ADDR_W","Field `bmx_err_addr` writer - "],["R","Register `bmx_err_addr` reader"],["W","Register `bmx_err_addr` writer"]]});
