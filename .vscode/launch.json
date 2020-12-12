@@ -1,6 +1,5 @@
 {
     //  VSCode Debugger Config for PineCone BL602
-    //  Requires Cortex-Debug Extension: https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug
     "version": "0.2.0",
     "configurations": [
         {
