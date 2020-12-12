@@ -18,14 +18,14 @@
                 "command": "bash",
                 "args": [
                     "-c", "-l",
-                    " set -e -x ; cargo build ; echo ✅ ◾ ️Done! "
+                    " pkill openocd ; set -e -x ; cargo build ; echo ✅ ◾ ️Done! "
                 ]
             },
             "linux": {
                 "command": "bash",
                 "args": [
                     "-c", "-l",
-                    " set -e -x ; cargo build ; echo ✅ ◾ ️Done! "
+                    " pkill openocd ; set -e -x ; cargo build ; echo ✅ ◾ ️Done! "
                 ]
             },
             "group": {
