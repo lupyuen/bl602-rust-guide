@@ -18,6 +18,8 @@ Notable files...
 
 -   [`openocd.gdb`](openocd.gdb): GDB Debugger Configuration
 
+-   [`src/main.rs`](src/main.rs): Rust Source Code
+
 ## Install and run OpenOCD for macOS
 
 Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
