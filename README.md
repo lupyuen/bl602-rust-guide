@@ -167,8 +167,9 @@ cargo run
 GDB shows...
 
 ```
-→ cargo run                                  
-    Finished dev [unoptimized + debuginfo] target(s) in 0.05s
+→ cargo run
+
+    Finished dev [unoptimized + debuginfo] target(s) in 0.08s
      Running `riscv64-unknown-elf-gdb -q -x openocd.gdb target/riscv32imac-unknown-none-elf/debug/bl602-rust-guide`
 Reading symbols from target/riscv32imac-unknown-none-elf/debug/bl602-rust-guide...
 0x21000000 in ?? ()
@@ -180,16 +181,20 @@ Breakpoint 1 at 0x22008000: file asm.S, line 27.
 
 Breakpoint 1, _start () at asm.S:27
 27      asm.S: No such file or directory.
+(gdb) break main
+Breakpoint 2 at 0x2200924e: file src/main.rs, line 10.
+(gdb) continue
+Continuing.
+
+Breakpoint 2, main () at src/main.rs:10
+10          let dp = pac::Peripherals::take().unwrap();
 (gdb) bt
-#0  _start () at asm.S:27
-(gdb) step
-28      in asm.S
-(gdb) bt  
-#0  _start () at asm.S:28
-(gdb) bt  
-#0  _start () at asm.S:28
-(gdb) step
-_abs_start () at asm.S:49
+#0  main () at src/main.rs:10
+(gdb) next
+11          let mut parts = dp.GLB.split();
+(gdb) bt
+#0  main () at src/main.rs:11
+(gdb) 
 ```
 
 OpenOCD shows...
