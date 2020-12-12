@@ -24,6 +24,12 @@
 
                 //  Launch OpenOCD. Based on https://www.justinmklam.com/posts/2017/10/vscode-debugger-setup/
                 "target remote | xpack-openocd-0.10.0-14/bin/openocd -c \"gdb_port pipe; log_output openocd.log\" -f openocd.cfg ",
+
+                //  Load the program into cache memory
+                "load",
+
+                //  Run the program until we hit the main() breakpoint
+                "continue",
             ]
         }
     ]
