@@ -8,6 +8,16 @@ Based on...
 
 [Sipeed BL602 Rust Guide](https://github.com/sipeed/bl602-rust-guide)
 
+Notable files...
+
+-   [`.vscode/launch.json`](.vscode/launch.json): VSCode Debugger Configuration
+
+-   [`.vscode/tasks.json`](.vscode/tasks.json): VSCode Tasks
+
+-   [`openocd.cfg`](openocd.cfg): OpenOCD Configuration
+
+-   [`openocd.gdb`](openocd.gdb): GDB Debugger Configuration
+
 ## Install and run OpenOCD for macOS
 
 Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
