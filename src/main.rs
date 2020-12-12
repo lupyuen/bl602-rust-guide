@@ -9,6 +9,8 @@ use panic_halt as _;
 fn main() -> ! {
     let dp = pac::Peripherals::take().unwrap();
     let mut parts = dp.GLB.split();
+
+    /* TODO: This code causes the debugger to hang on PineCone
     // enable clock
     let clocks = Strict::new()
         .freeze(&mut parts.clk_cfg);
@@ -32,4 +34,8 @@ fn main() -> ! {
         serial.try_write(b'T').ok();
         serial.try_flush().ok();
     }
+    */
+
+    //  Loop forever
+    loop {}
 }
