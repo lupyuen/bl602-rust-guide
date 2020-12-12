@@ -23,7 +23,7 @@
                 "break main",  //  Break at main()
 
                 //  Launch OpenOCD. Based on https://www.justinmklam.com/posts/2017/10/vscode-debugger-setup/
-                "target remote | xpack-openocd-0.10.0-14/bin/openocd -c \"gdb_port pipe; log_output openocd.log\" ",
+                "target remote | xpack-openocd-0.10.0-14/bin/openocd -c \"gdb_port pipe; log_output openocd.log\" -f openocd.cfg ",
             ]
         }
     ]
