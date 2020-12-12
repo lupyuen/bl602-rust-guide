@@ -8,66 +8,6 @@ Based on...
 
 [Sipeed BL602 Rust Guide](https://github.com/sipeed/bl602-rust-guide)
 
-## Install and run OpenOCD for Windows
-
-Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
-
-Connect PineCone and Sipeed JTAG Debugger to our computer (Yes we need two USB ports)
-
-Install driver for Sipeed JTAG Debugger...
-
-https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#drivers
-
-Using the Zadig Tool, install the WinUSB Driver for BOTH `Dual RS232 (Interface 0)` and `Dual RS232 (Interface 1)`
-
-Download OpenOCD from...
-
-https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-win32-x64.zip
-
-Run OpenOCD...
-
-```cmd
-git clone --recursive https://github.com/sipeed/bl602-pac
-git clone --recursive https://github.com/sipeed/bl602-hal
-git clone --recursive https://github.com/lupyuen/pinecone-rust
-cd pinecone-rust
-# TODO: Check openocd.cfg, verify that the FTDI channel is 0: "ftdi_channel 0"
-# TODO: Unzip OpenOCD into bl602-rust-guide\xpack-openocd-0.10.0-15
-xpack-openocd-0.10.0-15\bin\openocd.exe
-```
-
-We should see...
-
-```
-C:\pinecone\bl602-rust-guide>..\xpack-openocd-0.10.0-15\bin\openocd.exe
-xPack OpenOCD, x86_64 Open On-Chip Debugger 0.10.0+dev (2020-10-13-17:29)
-Licensed under GNU GPL v2
-For bug reports, read
-        http://openocd.org/doc/doxygen/bugs.html
-Ready for Remote Connections
-Info : clock speed 100 kHz
-Info : JTAG tap: riscv.cpu tap/device found: 0x20000c05 (mfg: 0x602 (<unknown>), part: 0x0000, ver: 0x2)
-Info : datacount=1 progbufsize=2
-Info : Disabling abstract command reads from CSRs.
-Info : Examined RISC-V core; found 1 harts
-Info :  hart 0: XLEN=32, misa=0x40801125
-Info : starting gdb server for riscv.cpu.0 on 3333
-Info : Listening on port 3333 for gdb connections
-Info : JTAG tap: riscv.cpu tap/device found: 0x20000c05 (mfg: 0x602 (<unknown>), part: 0x0000, ver: 0x2)
-reset-assert-pre
-reset-deassert-post
-Info : Disabling abstract command writes to CSRs.
-reset-init
-Info : Listening on port 6666 for tcl connections
-Info : Listening on port 4444 for telnet connections
-```
-
-Note: For Sipeed JTAG Debugger, FTDI channel must be 0 in [`openocd.cfg`](openocd.cfg)...
-
-```
-ftdi_channel 0
-```
-
 ## Install and run OpenOCD for macOS
 
 Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
@@ -229,6 +169,68 @@ Info : Disabling abstract command reads from FPRs.
 Warn : negative reply, retrying
 Warn : negative acknowledgment, but no packet pending
 ```
+
+## Install and run OpenOCD for Windows
+
+Connect Sipeed JTAG Debugger to PineCone: TMS, TCK, TDI, TDO, GND 
+
+Connect PineCone and Sipeed JTAG Debugger to our computer (Yes we need two USB ports)
+
+Install driver for Sipeed JTAG Debugger...
+
+https://docs.platformio.org/en/latest/plus/debug-tools/sipeed-rv-debugger.html#drivers
+
+Using the Zadig Tool, install the WinUSB Driver for BOTH `Dual RS232 (Interface 0)` and `Dual RS232 (Interface 1)`
+
+Download OpenOCD from...
+
+https://github.com/xpack-dev-tools/openocd-xpack/releases/download/v0.10.0-15/xpack-openocd-0.10.0-15-win32-x64.zip
+
+Run OpenOCD...
+
+```cmd
+git clone --recursive https://github.com/sipeed/bl602-pac
+git clone --recursive https://github.com/sipeed/bl602-hal
+git clone --recursive https://github.com/lupyuen/pinecone-rust
+cd pinecone-rust
+# TODO: Check openocd.cfg, verify that the FTDI channel is 0: "ftdi_channel 0"
+# TODO: Unzip OpenOCD into bl602-rust-guide\xpack-openocd-0.10.0-15
+xpack-openocd-0.10.0-15\bin\openocd.exe
+```
+
+We should see...
+
+```
+C:\pinecone\bl602-rust-guide>..\xpack-openocd-0.10.0-15\bin\openocd.exe
+xPack OpenOCD, x86_64 Open On-Chip Debugger 0.10.0+dev (2020-10-13-17:29)
+Licensed under GNU GPL v2
+For bug reports, read
+        http://openocd.org/doc/doxygen/bugs.html
+Ready for Remote Connections
+Info : clock speed 100 kHz
+Info : JTAG tap: riscv.cpu tap/device found: 0x20000c05 (mfg: 0x602 (<unknown>), part: 0x0000, ver: 0x2)
+Info : datacount=1 progbufsize=2
+Info : Disabling abstract command reads from CSRs.
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x40801125
+Info : starting gdb server for riscv.cpu.0 on 3333
+Info : Listening on port 3333 for gdb connections
+Info : JTAG tap: riscv.cpu tap/device found: 0x20000c05 (mfg: 0x602 (<unknown>), part: 0x0000, ver: 0x2)
+reset-assert-pre
+reset-deassert-post
+Info : Disabling abstract command writes to CSRs.
+reset-init
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+```
+
+Note: For Sipeed JTAG Debugger, FTDI channel must be 0 in [`openocd.cfg`](openocd.cfg)...
+
+```
+ftdi_channel 0
+```
+
+TODO: Install xpack-riscv-none-embed-gcc like for macOS above
 
 ## License
 
