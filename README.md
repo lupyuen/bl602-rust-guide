@@ -103,7 +103,7 @@ Note: For Sipeed JTAG Debugger, FTDI channel must be 0 in [`openocd.cfg`](openoc
 ftdi_channel 0
 ```
 
-## Debug Rust app on PineCone
+## Debug Rust Firmware with GDB
 
 [Watch on YouTube](https://youtu.be/A54Agz35vfk)
 
@@ -181,6 +181,10 @@ Info : Disabling abstract command reads from FPRs.
 Warn : negative reply, retrying
 Warn : negative acknowledgment, but no packet pending
 ```
+
+## Debug Rust Firmware with VSCode
+
+[Watch on YouTube](https://youtu.be/b9f2vxYahHY)
 
 ## Install and run OpenOCD for Windows
 
