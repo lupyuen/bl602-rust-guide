@@ -153,6 +153,8 @@ ftdi_channel 0
 
 ## Debug Rust app on PineCone
 
+[Watch on YouTube](https://youtu.be/A54Agz35vfk)
+
 Open another Command Prompt and enter...
 
 ```bash
