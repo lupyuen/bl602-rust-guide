@@ -1,8 +1,10 @@
 ﻿# PineCone BL602 OpenOCD and Rust Guide
 
-Read the article...
+Read the articles...
 
-["Connect PineCone BL602 to OpenOCD"](https://lupyuen.github.io/articles/openocd)
+1.  ["Debug Rust on PineCone BL602 with VSCode and GDB"](https://lupyuen.github.io/articles/debug)
+
+1.  ["Connect PineCone BL602 to OpenOCD"](https://lupyuen.github.io/articles/openocd)
 
 Based on...
 
