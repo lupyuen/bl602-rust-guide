@@ -9,7 +9,7 @@
             //  Application Executable to be flashed before debugging
             "target": "${workspaceRoot}/target/riscv32imac-unknown-none-elf/debug/bl602-rust-guide",
             "cwd": "${workspaceRoot}",
-            "gdbpath": "${workspaceRoot}/xpack-riscv-none-embed-gcc-8.3.0-2.3/bin/riscv-none-embed-gdb",
+            "gdbpath": "${workspaceRoot}/xpack-riscv-none-embed-gcc/bin/riscv-none-embed-gdb",
             "valuesFormatting": "parseText",
             "autorun": [
                 //  Before loading the Application, run these gdb commands.
@@ -23,7 +23,7 @@
                 "break main",  //  Break at main()
 
                 //  Launch OpenOCD. Based on https://www.justinmklam.com/posts/2017/10/vscode-debugger-setup/
-                "target remote | xpack-openocd-0.10.0-14/bin/openocd -c \"gdb_port pipe; log_output openocd.log\" -f openocd.cfg ",
+                "target remote | xpack-openocd/bin/openocd -c \"gdb_port pipe; log_output openocd.log\" -f openocd.cfg ",
 
                 //  Load the program into cache memory
                 "load",
