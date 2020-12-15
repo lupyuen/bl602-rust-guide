@@ -6,6 +6,8 @@ Read the articles...
 
 1.  ["Connect PineCone BL602 to OpenOCD"](https://lupyuen.github.io/articles/openocd)
 
+1.  ["Quick Peek of PineCone BL602 RISC-V Evaluation Board"](https://lupyuen.github.io/articles/pinecone)
+
 Based on...
 
 [Sipeed BL602 Rust Guide](https://github.com/sipeed/bl602-rust-guide)
