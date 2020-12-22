@@ -1,4 +1,8 @@
-﻿# PineCone BL602 OpenOCD and Rust Guide
+![Debugging PineCone BL602 with Sipeed JTAG Debugger](https://lupyuen.github.io/images/debug-title.jpg)
+
+_Debugging PineCone BL602 with Sipeed JTAG Debugger_
+
+# PineCone BL602 OpenOCD and Rust Guide
 
 Read the articles...
 
